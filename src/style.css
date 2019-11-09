@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+#html{
+  word-break: break-all;
+}
+#div1{
+  position: fixed;
+}
+#div1::before{
+  content: '';
+  display: block;
+  position: absolute;
+}
+#div1::after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+@media (max-width:430px){
+  #html{
+    height:50vh;
+    overflow: auto;
+  }
+  #div2{
+    height: 50vh;
+    margin-top:-18%;
+  }
+  #div1{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+  }
+}
